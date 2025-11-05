@@ -37,6 +37,10 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    /* 👇 essas 3 linhas são o segredo */
+    display: flex;
+    flex-direction: column;
 }
 ol, ul {
     list-style: none;
@@ -82,25 +86,24 @@ table {
 }
 
 .cabecalho__busca {
-    background: linear-gradient(45deg, #C98CF1,#7B78E5);
-    padding: 2px;
-    border-radius: 10px;
-    display: flex;
     align-items: center;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #C98CF1,#7B78E5);
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    padding: 2px;
+    width: auto; 
 }
 
 .busca__fundo {
+    align-items: center;
     background-color: #041A37;
     border-radius: 8px;
-    padding: 4px;
+    display: flex;
+    margin: 0 auto;
     width: 100%;
 }
-
-.busca__fundo form {
-    display: flex;
-    align-items: center;
-}
-
 
 .busca__input {
     align-items: center;
@@ -383,3 +386,41 @@ table {
     border: 2px solid #7B78E5;
     cursor: pointer;
 }
+
+
+/*Adicionados a mais*/
+.principal,
+.pagina-inicial {
+    flex: 1; /* faz o conteúdo ocupar o espaço restante */
+}
+
+
+
+
+.pagina-inicial {
+    flex: 1; /* ocupa todo o espaço livre acima do rodapé */
+    display: flex;
+    flex-direction: column;
+}
+
+.principal {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* footer fixo no fundo da página */
+.rodape {
+    margin-top: auto;
+}
+
+.menu-lateral {
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    height: 100vh; /* ocupa toda a altura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
