@@ -82,24 +82,25 @@ table {
 }
 
 .cabecalho__busca {
-    align-items: center;
-    border-radius: 10px;
     background: linear-gradient(45deg, #C98CF1,#7B78E5);
-    display: flex;
-    height: auto;
-    justify-content: space-between;
     padding: 2px;
-    width: auto; 
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .busca__fundo {
-    align-items: center;
     background-color: #041A37;
     border-radius: 8px;
-    display: flex;
-    margin: 0 auto;
+    padding: 4px;
     width: 100%;
 }
+
+.busca__fundo form {
+    display: flex;
+    align-items: center;
+}
+
 
 .busca__input {
     align-items: center;
