@@ -253,7 +253,9 @@ table {
 .menu-lateral__navegacao {
     display: flex;
     flex-direction: column;
+    
 }
+
 
 .menu-lateral__navegacao a {
     font-family: 'Space Grotesk', sans-serif;

@@ -26,14 +26,12 @@
                     <a href="#"><img src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"> Logout</a>
                 </nav>
             </section>
-
-            <!-- Aqui vai o conteúdo específico de cada página -->
+        
             <section class="conteudo-principal" style="margin-left: 5em;">
                 {% block content %}{% endblock %}
             </section>
         </main>
-
-        {% include 'galeria/partials/_footer.html' %}
     </div>
+    {% include 'galeria/partials/_footer.html' %}
 </body>
 </html>
